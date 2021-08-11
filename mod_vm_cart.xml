@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>MOD_VM_CART</name>
+	<creationDate>March 31 2015</creationDate>
+    <author>Vladimir</author>
+    <authorUrl>http://virtuemart.su</authorUrl>
+    <version>1.6</version>
+	<description>MOD_VM_CART_DESC</description>
+    <files>
+        <filename module="mod_vm_cart">mod_vm_cart.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>language</folder>
+		<folder>assets</folder>
+    </files>
+    <params>
+        <param name="moduleclass_sfx" type="text" default=""
+			label="MOD_VM_CART_SUFFIX"
+			description="MOD_VM_CART_SUFFIX_DESC" />
+        <br/>
+        <param name="show_product_list" type="list" default="1"
+			label="MOD_VM_CART_SHOW_LIST"
+			description="MOD_VM_CART_SHOW_LIST_DESC">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+    </params>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="moduleclass_sfx" type="text" default=""
+			label="MOD_VM_CART_SUFFIX"
+			description="MOD_VM_CART_SUFFIX_DESC" />
+				
+            </fieldset>
+        </fields>
+    </config>
+</extension>
